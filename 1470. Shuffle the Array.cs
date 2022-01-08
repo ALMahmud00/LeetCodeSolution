@@ -1,0 +1,1 @@
+public class Solution {    public int[] Shuffle(int[] nums, int n) {        var numbers = new int[nums.Length];            for(int i = 0, j = 0; i < nums.Length / 2; i++, j++)            {                numbers[j] = nums[i];                numbers[++j] = nums[i+n];            }            return numbers;    }}
